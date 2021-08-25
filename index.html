@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>School Project by Sarah Winroth</title>
+    <script src="script/text-animation.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="mainnav">
+            <span class="logo">              
+                <h3>Sarah Winroth</h3>
+            </span>
+            <div class="hamburger">
+                <div class="hamburger__line hamburger__line1"></div>
+                <div class="hamburger__line hamburger__line2"></div>
+                <div class="hamburger__line hamburger__line3"></div>
+              </div>
+            <ul>
+                <li><a href="#about">Om mig</a></li>
+                <li><a href="#competences">Kompetenser</a></li>
+                <li><a href="#webbapp">Webbapp</a></li>
+                <li><a href="#report">Rapport</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+    <div class="hero-container">
+        <div class="hero-text-animation">
+            <h1>
+                <span
+                 class="txt-rotate"
+                 data-period="1000"
+                 data-rotate='[ "Lyckade projekt", "Smarta webbplatser", "Dynamisk design", "Systemintegration", "Kvalitetsäkrar" ]'></span></h1>           
+        </div>
+        <div class="hero-image">
+            <img src="img/hero-img.png"/>
+        </div>     
+        <div class="hero-text">       
+                 <h3>Kontakta mig och få en kostndasfri offertförfrågan</h3>
+            <div class="hero-btns">
+                <a class="btn btn--primary" href="#contact">Kontakt</a>
+                <a class="btn btn--secondary" href="#competences">Kompetenser</a>
+            </div>
+        </div> 
+    </div>
+</section>
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>Webb- & systemutvecklare</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia blanditiis, dolores ab corrupti vel nulla. Laboriosam, facere? Voluptatum iusto, dolorem labore voluptates at voluptatibus ab itaque, maiores sequi impedit aspernatur!</p>
+        </div>
+        <img src="img/avatar.png" class="about-image"/>
+    </section>
+    <section class="competences" id="competences">
+        <h2>Mina kompetenser</h2> 
+        <div class="columns-container">                
+         <div class="column">
+            <h3>C#/.NET</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque laudantium sint esse non.</p>
+         </div>
+         <div class="column">
+            <h3>Kvalitetsäkring</h3> 
+            <p>TDD, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque laudantium sint esse non.</p>
+         </div>           
+         <div class="column">
+            <h3>Agil mjukvaruutveckling</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque laudantium sint esse non.</p>
+         </div>
+         <div class="column">
+            <h3>HTML/CSS</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque laudantium sint esse non.</p>
+         </div> 
+         <div class="column">
+            <h3>JavaScript</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque laudantium sint esse non.</p>
+         </div> 
+         <div class="column">
+            <h3>Databashantering</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque laudantium sint esse non.</p>
+         </div>
+         <div class="column">
+            <h3>Git</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia atque laudantium sint esse non.</p>
+         </div> 
+        </div>  
+    </section>
+    <section class="webbapp" id="webbapp">
+      <h2>WEBBAPPAR</h2> 
+        <div class="webbapps">
+            <div class="calculator">
+                <h3>Miniräknare</h3>      
+                    <input type="number" id="input1" name="inputnumber1">
+                    <input type="number" id="input2" name="inputnumber2">
+                        <div class="calc-btns">
+                            <button onclick="getOperator('+')" class="calc-btn">+</button>
+                            <button onclick="getOperator('-')" class="calc-btn">-</button>
+                            <button onclick="getOperator('*')" class="calc-btn">*</button>
+                            <button onclick="getOperator('/')" class="calc-btn">/</button>
+                            <button onclick="clr()" class="calc-btn">C</button>
+                            <button onclick="summa()" class="calc-btn">=</button>
+                        </div>
+                    <div id="summan"></div>
+            </div>
+            <div class="api">
+                <h3>API-anrop</h3> 
+                    <div id="randomFox">
+                        <h3>Random Fox Placeholder</h3>
+                    </div>
+                    <div>
+                        <button id="fox-btn">Hämta en räv</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="report" id="report">
+        <h2>Rapport av inlämningsuppgift 1</h2>
+        <p></p>
+    </section>
+    <footer id="contact">
+        <div class="footer-container">
+				<div class="column-footer">
+					<p>Sarah Winroth AB</p>
+					<p>OCR: 890928</p>
+				</div>
+				<div class="column-footer">
+					<p>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+						</svg>info@hotmail.com
+					</p>
+					<p>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-headset" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						  <path fill-rule="evenodd" d="M8 1a5 5 0 0 0-5 5v4.5H2V6a6 6 0 1 1 12 0v4.5h-1V6a5 5 0 0 0-5-5z"/>
+						  <path d="M11 8a1 1 0 0 1 1-1h2v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V8zM5 8a1 1 0 0 0-1-1H2v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V8z"/>
+						  <path fill-rule="evenodd" d="M13.5 8.5a.5.5 0 0 1 .5.5v3a2.5 2.5 0 0 1-2.5 2.5H8a.5.5 0 0 1 0-1h3.5A1.5 1.5 0 0 0 13 12V9a.5.5 0 0 1 .5-.5z"/>
+						  <path d="M6.5 14a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1z"/>
+						</svg>0701-234 567
+					</p>
+				</div>
+                <div class="column-footer">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1768.4837451793283!2d12.007052171165164!3d57.67086064059854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3b67114e51f%3A0xae402e7a2c7e6dd4!2sCampus%20M%C3%B6lndal!5e0!3m2!1ssv!2stn!4v1629907245943!5m2!1ssv!2stn" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+    </footer>
+    <script src="script/nav.js"></script>
+    <script src="script/calc.js"></script>
+    <script src="script/randomFox.js"></script>
+</body>
+</html>
