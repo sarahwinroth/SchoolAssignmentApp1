@@ -329,7 +329,7 @@ h3 {
 }
 @media screen and (max-width: 859px) {
   .btn {
-    width: 100%;
+    width: 100% !important;
   }
   .hero-btns {
     margin: 0 2em;
@@ -345,7 +345,7 @@ h3 {
 /* 04. ABOUT SECTION              */
 /************************************************/
 
-.about{
+.about {
   width: 100%;
   display: grid;
   background-color: var(--clr-primary-light);
@@ -358,7 +358,7 @@ h3 {
 }
 
 .about::after,
-.about::before{
+.about::before {
     position: absolute;
     content: '';
     width: 150px;
@@ -367,20 +367,20 @@ h3 {
     bottom: -1.6em;
     z-index: 20;
 }
-.about::before{
+.about::before {
     right: 50%;
     transform: skew(0, 20deg);
 }
-.about::after{
+.about::after {
     left: 50%;
     transform: skew(0, -20deg);
 }
 .about p {
   margin-top: 20px;
 }
-.about-image{
+.about-image {
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
-  margin-top: 1.4em;
+  margin-top: 3em;
 }
 
 @media screen and (min-width: 600px) {
@@ -458,7 +458,7 @@ h3 {
   padding: 4em 0;
 }
 
-.webbapp h2{
+.webbapp h2 {
   margin-top: 2em;
 }
 
@@ -495,7 +495,7 @@ input[type=number] {
   cursor: pointer;
 }
 
-#summan h3{
+#summan h3 {
   font-size: 1.6rem;
 }
 
@@ -517,7 +517,7 @@ input[type=number] {
   margin: 8em auto;
 }
 
-#randomFox img{
+#randomFox img {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -553,7 +553,6 @@ input[type=number] {
 /************************************************/
 
 .report {
-  height: 120vh;
   padding: 60px;
   background: var(--clr-primary-transparent);
 }

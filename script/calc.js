@@ -51,7 +51,6 @@ function summa() {
     }
 }
 
-
 function clr()
          {
             num1 = "";
